@@ -1,0 +1,54 @@
+<!-- file name login.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/login.css"> 
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="info.html">Accounts</a></li> 
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>      
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <form id="loginForm">
+
+
+
+
+            <label for="loginEmail"><b>Email</b></label>
+            <input type="email" id="Email" name="email" placeholder="Enter Email" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" id="password" name="passw" placeholder="########" maxlength="8" required>
+
+            <label for="cardnumber"><b>Card Number</b></label>
+            <input type="text" id="card" name="Card Number" placeholder="################" maxlength="16" required>
+
+            <button type="submit" id="submitSignIn" class="logb">Log in</button>
+        </form>
+        <div id="signInMessage" class="message" ></div>
+    </div>
+        
+    <script type="module" src="../JS/firebaseauth.js"></script>
+</body>
+
+</html>

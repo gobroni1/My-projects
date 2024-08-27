@@ -51,7 +51,7 @@ def start ():
         print(f"Folder '{folder_name}' already exists on the desktop.")
 
 #choose folder to satrt   
-    new1_folder = 'C:\\Users\\delluser\\Desktop\\duplicates'
+    new1_folder = 'C:\\Users\\Admin\\Desktop\\duplicates'
     main_folder_path = filedialog.askdirectory(title="Choose where to start from")
 
 #see if folders are hidden
@@ -78,7 +78,7 @@ def start ():
             elif filehash in uniqueFiles:
             # Move the duplicate file to new1_folder
                 shutil.move(filepath2, os.path.join(new1_folder, file))
-                print(f"{filepath2} has been moved to new1")
+                print(f"{filepath2} has been moved to -duplicats-")
             else:
             # Store the filehash and folder path in uniqueFiles
                 uniqueFiles[filehash] = folder
