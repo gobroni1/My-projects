@@ -1,0 +1,50 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Container for the game board */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Styling for the horizontal rows */
+.horizontals {
+    display: flex;
+    gap: 10px;
+}
+
+/* Styling for individual squares */
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #87cefa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    position: relative;
+}
+
+/* Styling for the square when clicked */
+.square:hover {
+    transform: scale(1.05);
+}
+
+/* Image styling */
+.symbol {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
